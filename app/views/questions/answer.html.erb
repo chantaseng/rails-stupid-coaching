@@ -1,3 +1,23 @@
-<%= @ask %>
+<div>
+  <h1 class="h1">Stupid Coaching</h1>
+  <div class="p-3 my-3 alert-warning answer-ask d-block ">
+    <div>
+      <%= @ask %>
+    </div>
+    <div>
+      <span>- You</span>
+    </div>
+  </div>
+  <div class="p-3 mb-3 alert-success answer-answer d-block">
+    <div>
+      <%= @answer %>
+    </div>
+    <div>
+      <span>- Stupid Coach</span>
+    </div>
+  </div>
 
-<%= @answer %>
+  <div>
+  <%= link_to "Do you want to ask another question?", ask_path, id:"link" %>
+  </div>
+</div>
